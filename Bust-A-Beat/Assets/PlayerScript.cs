@@ -1,33 +1,40 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
     float moveSpeed = 5f;
-    float jumpForce = 7f;
+    public float jumpForce = 7f;
 
     Rigidbody2D rb;
+    Animator animator;
     Vector2 moveInput;
     bool isFacingRight = true;
-    bool isJumping = false;
+    bool isGrounded = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+        animator.SetFloat("xVelocity", Math.Abs(rb.linearVelocityX));
+        animator.SetFloat("yVelocity", rb.linearVelocityY);
         FlipSprite();
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed && !isJumping)
+        if (context.performed && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isJumping = true;
+            isGrounded = false;
+            animator.SetBool("isJumping", !isGrounded);
+
         }
     }
 
@@ -47,8 +54,9 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        isJumping = false ;
+        isGrounded = true ;
+        animator.SetBool("isJumping", !isGrounded);
     }
 }

@@ -576,8 +576,9 @@ GameObject:
   - component: {fileID: 1945325819}
   - component: {fileID: 1945325822}
   - component: {fileID: 1945325821}
+  - component: {fileID: 1945325823}
   m_Layer: 0
-  m_Name: character_movement_32
+  m_Name: Guni
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +650,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -8994824239827698651, guid: a67039dde669dde40bf319e09e5dd397, type: 3}
+  m_Sprite: {fileID: 1350939839643869872, guid: 2f5bcea71ed00da41bb8d767f86aa8cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -890,6 +891,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459fa8bfc5717ab4d973bd3cd3251e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 7
+--- !u!70 &1945325823
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945325815}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.03295701, y: -2.0747492}
+  m_Size: {x: 1.1091566, y: 0.37198707}
+  m_Direction: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
