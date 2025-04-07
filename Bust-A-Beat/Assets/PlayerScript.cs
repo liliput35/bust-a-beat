@@ -29,7 +29,7 @@ public class PlayerScript : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed && isGrounded)
+        if (context.performed )
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
