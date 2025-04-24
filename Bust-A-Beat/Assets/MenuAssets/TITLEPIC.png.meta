@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: acdf9434f3f35bd47af3bd571545ba0e
+guid: b927458197e7ed64ab6b87d20756ef4d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1180773026623433386
-    second: guniV1_0
+      213: -2513668152799860529
+    second: TITLEPIC_0
+  - first:
+      213: 6925617943407816149
+    second: TITLEPIC_1
+  - first:
+      213: -2474838052420341237
+    second: TITLEPIC_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guniV1_0
+      name: TITLEPIC_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 606
-        height: 628
+        x: 29
+        y: 42
+        width: 427
+        height: 416
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aaaa04ccfc2f26010800000000000000
-      internalID: 1180773026623433386
+      spriteID: fc8e62d0228ad1dd0800000000000000
+      internalID: -2513668152799860529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITLEPIC_1
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 237
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dde4e673dcbc1060800000000000000
+      internalID: 6925617943407816149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITLEPIC_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02bdd057eb97add0800000000000000
+      internalID: -2474838052420341237
       vertices: []
       indices: 
       edges: []
@@ -147,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      guniV1_0: 1180773026623433386
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
