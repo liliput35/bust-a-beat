@@ -1,16 +1,31 @@
 fileFormatVersion: 2
-guid: b927458197e7ed64ab6b87d20756ef4d
+guid: 25bc69dce4b90f843b17d0c214429c02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2513668152799860529
-    second: TITLEPIC_0
+      213: 7186205684248495084
+    second: Training_Dummy_0
   - first:
-      213: 6925617943407816149
-    second: TITLEPIC_1
+      213: 8333426789993421840
+    second: Training_Dummy_1
   - first:
-      213: -2474838052420341237
-    second: TITLEPIC_2
+      213: -372412811422264658
+    second: Training_Dummy_2
+  - first:
+      213: -9045723270863864907
+    second: Training_Dummy_3
+  - first:
+      213: 1704079657335380836
+    second: Training_Dummy_4
+  - first:
+      213: 7093965188714030101
+    second: Training_Dummy_5
+  - first:
+      213: 4183866600518662966
+    second: Training_Dummy_6
+  - first:
+      213: 7402643501051590769
+    second: Training_Dummy_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TITLEPIC_0
+      name: Training_Dummy_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 42
-        width: 427
-        height: 416
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc8e62d0228ad1dd0800000000000000
-      internalID: -2513668152799860529
+      spriteID: ce34684eef78ab360800000000000000
+      internalID: 7186205684248495084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TITLEPIC_1
+      name: Training_Dummy_1
       rect:
         serializedVersion: 2
-        x: 454
-        y: 237
-        width: 19
-        height: 20
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5dde4e673dcbc1060800000000000000
-      internalID: 6925617943407816149
+      spriteID: 01c184b538746a370800000000000000
+      internalID: 8333426789993421840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TITLEPIC_2
+      name: Training_Dummy_2
       rect:
         serializedVersion: 2
-        x: 27
-        y: 96
-        width: 9
-        height: 8
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +180,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b02bdd057eb97add0800000000000000
-      internalID: -2474838052420341237
+      spriteID: ea21f59658ce4daf0800000000000000
+      internalID: -372412811422264658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Training_Dummy_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbbca78c92277280800000000000000
+      internalID: -9045723270863864907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Training_Dummy_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bd1747b6b16a710800000000000000
+      internalID: 1704079657335380836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Training_Dummy_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5146942f0c3d27260800000000000000
+      internalID: 7093965188714030101
       vertices: []
       indices: 
       edges: []
@@ -175,7 +256,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d648c51e67206143806d3f3e90d9938
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +266,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TITLEPIC_0: -2513668152799860529
-      TITLEPIC_1: 6925617943407816149
-      TITLEPIC_2: -2474838052420341237
+      Training_Dummy_0: 7186205684248495084
+      Training_Dummy_1: 8333426789993421840
+      Training_Dummy_2: -372412811422264658
+      Training_Dummy_3: -9045723270863864907
+      Training_Dummy_4: 1704079657335380836
+      Training_Dummy_5: 7093965188714030101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

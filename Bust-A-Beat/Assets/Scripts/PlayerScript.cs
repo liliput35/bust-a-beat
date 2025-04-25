@@ -47,10 +47,11 @@ public class PlayerScript : MonoBehaviour
     {
         if ((moveInput.x > 0 && !isFacingRight) || (moveInput.x < 0 && isFacingRight))
         {
+            transform.Rotate(0f, 180f, 0f);
             isFacingRight = !isFacingRight;
-            Vector3 scale = transform.localScale;
+            /*Vector3 scale = transform.localScale;
             scale.x *= -1;
-            transform.localScale = scale;
+            transform.localScale = scale;*/
         }
     }
 
