@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1067689394}
-  smoothSpeed: 0.125
+  smoothSpeed: 1
 --- !u!114 &419898257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1380,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1485,6 +1485,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 419898255}
+  - {fileID: 1934170127}
   - {fileID: 1330611973}
   - {fileID: 439186457}
   - {fileID: 1411859246}
@@ -1496,5 +1497,4 @@ SceneRoots:
   - {fileID: 1225475116}
   - {fileID: 1916658557}
   - {fileID: 687356271}
-  - {fileID: 1934170127}
   - {fileID: 1779444064}
