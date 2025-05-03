@@ -12,11 +12,15 @@ public class PlayerScript : MonoBehaviour
     Vector2 moveInput;
     bool isFacingRight = true;
     bool isGrounded = false;
+    public int maxHealth = 5;
+    public int currentHealth;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     private void FixedUpdate()
@@ -59,5 +63,21 @@ public class PlayerScript : MonoBehaviour
     {
         isGrounded = true ;
         animator.SetBool("isJumping", !isGrounded);
+    }
+
+    // Health control methods
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log("Player took damage. Current health: " + currentHealth);
+        // TODO: Add visual feedback, check for death, etc.
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log("Player healed. Current health: " + currentHealth);
     }
 }
