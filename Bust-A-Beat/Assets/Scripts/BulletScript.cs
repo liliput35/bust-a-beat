@@ -13,6 +13,16 @@ public class BulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
+
+        if (collision.gameObject.name == "Enemy") 
+        {
+            EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(1);
+            }
+        }
+        
     }
 
 }

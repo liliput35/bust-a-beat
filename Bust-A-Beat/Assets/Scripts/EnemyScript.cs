@@ -2,43 +2,60 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float speed = 2f;
+    public float patrolDistance = 5f; // n units to patrol
+    public int maxHealth = 5;
+    private int currentHealth;
 
-    private Rigidbody2D rb;
-    private int direction = -1; // -1 = left, 1 = right
+    private Vector3 startPoint;
+    private Vector3 direction = Vector3.right;
 
-    void Start()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+        startPoint = transform.position;
+        currentHealth = maxHealth;
     }
 
-    void FixedUpdate()
+    private void Update()
     {
-        // Continuously apply horizontal velocity
-        rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+        transform.Translate(direction * speed * Time.deltaTime);
+
+        float distanceMoved = Vector3.Distance(startPoint, transform.position);
+        if (distanceMoved >= patrolDistance)
+        {
+            direction *= -1;
+            Flip();
+            startPoint = transform.position;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.collider.isTrigger)
+        if (!collision.collider.isTrigger && collision.gameObject.name == "Guni")
         {
-            // If the enemy hits the player (named Guni), apply damage
-            if (collision.gameObject.name == "Guni")
+            PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
+            if (player != null)
             {
-                PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
-                if (player != null)
-                {
-                    player.TakeDamage(1); // Deduct 1 health
-                }
+                player.TakeDamage(1);
             }
-            else
-            {
-                // Reverse direction if it hits anything else
-                direction *= -1;
-                Flip();
-            }
+        } 
+    }
+
+    public void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+        Debug.Log("Enemy took damage. Health: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Enemy died.");
+        Destroy(gameObject);
     }
 
     private void Flip()
