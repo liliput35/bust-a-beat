@@ -14,12 +14,19 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject);
 
-        if (collision.gameObject.name == "Enemy") 
+        if (collision.gameObject.name == "Enemy")
         {
             EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
             if (enemy != null)
             {
                 enemy.TakeDamage(1);
+            }
+        } else if (collision.gameObject.name == "Guni") 
+        {
+            PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
+            if (player != null)
+            {
+                player.TakeDamage(1);
             }
         }
         
