@@ -72,6 +72,7 @@ public class PlayerScript : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         Debug.Log("Player took damage. Current health: " + currentHealth);
         // TODO: Add visual feedback, check for death, etc.
+        animator.SetTrigger("isHit");
     }
 
     public void Heal(int amount)
