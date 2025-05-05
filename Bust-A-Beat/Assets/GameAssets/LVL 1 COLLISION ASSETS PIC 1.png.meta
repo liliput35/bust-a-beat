@@ -1,55 +1,58 @@
 fileFormatVersion: 2
-guid: bcd402224a083c941b16954cebbd760a
+guid: ab7f37bf6427120418101e111caf810c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8040543128590762961
-    second: LVL 1 COLLISION ASSETS PIC_0
+      213: 2614451113557404615
+    second: LVL 1 COLLISION ASSETS PIC 1_0
   - first:
-      213: 4567604205713489826
-    second: LVL 1 COLLISION ASSETS PIC_1
+      213: -7868347874672118444
+    second: LVL 1 COLLISION ASSETS PIC 1_1
   - first:
-      213: -4754502109350674483
-    second: LVL 1 COLLISION ASSETS PIC_2
+      213: 2553202668365216603
+    second: LVL 1 COLLISION ASSETS PIC 1_2
   - first:
-      213: 3624443186366682935
-    second: LVL 1 COLLISION ASSETS PIC_3
+      213: 5414782747132323898
+    second: LVL 1 COLLISION ASSETS PIC 1_3
   - first:
-      213: -1385377987521287459
-    second: LVL 1 COLLISION ASSETS PIC_4
+      213: -4646046971279949166
+    second: LVL 1 COLLISION ASSETS PIC 1_4
   - first:
-      213: -5717498885018040774
-    second: LVL 1 COLLISION ASSETS PIC_5
+      213: -7047293898096584585
+    second: LVL 1 COLLISION ASSETS PIC 1_5
   - first:
-      213: 1795002417544806388
-    second: LVL 1 COLLISION ASSETS PIC_6
+      213: -73213986668780993
+    second: LVL 1 COLLISION ASSETS PIC 1_6
   - first:
-      213: 6868463006638592162
-    second: LVL 1 COLLISION ASSETS PIC_7
+      213: -5158600106040868682
+    second: LVL 1 COLLISION ASSETS PIC 1_7
   - first:
-      213: 8201138589009499622
-    second: LVL 1 COLLISION ASSETS PIC_8
+      213: 106968623695469734
+    second: LVL 1 COLLISION ASSETS PIC 1_8
   - first:
-      213: 9072067375116000685
-    second: LVL 1 COLLISION ASSETS PIC_9
+      213: -929904996747358405
+    second: LVL 1 COLLISION ASSETS PIC 1_9
   - first:
-      213: -6821080245045186608
-    second: LVL 1 COLLISION ASSETS PIC_10
+      213: 1074947551106155972
+    second: LVL 1 COLLISION ASSETS PIC 1_10
   - first:
-      213: 846074844739519921
-    second: LVL 1 COLLISION ASSETS PIC_11
+      213: 108369565309501609
+    second: LVL 1 COLLISION ASSETS PIC 1_11
   - first:
-      213: 2200465927170359525
-    second: LVL 1 COLLISION ASSETS PIC_12
+      213: 4451906133871859820
+    second: LVL 1 COLLISION ASSETS PIC 1_12
   - first:
-      213: 2360115434132295613
-    second: LVL 1 COLLISION ASSETS PIC_13
+      213: -4670453476442245116
+    second: LVL 1 COLLISION ASSETS PIC 1_13
   - first:
-      213: -4610535055105031637
-    second: LVL 1 COLLISION ASSETS PIC_14
+      213: -4857854573698448787
+    second: LVL 1 COLLISION ASSETS PIC 1_14
   - first:
-      213: 481916210298240517
-    second: LVL 1 COLLISION ASSETS PIC_15
+      213: -3277278528089147940
+    second: LVL 1 COLLISION ASSETS PIC 1_15
+  - first:
+      213: -5912745647873009953
+    second: LVL 1 COLLISION ASSETS PIC 1_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,11 +144,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_0
+      name: LVL 1 COLLISION ASSETS PIC 1_0
       rect:
         serializedVersion: 2
         x: 31
@@ -160,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d34cd4ff5fb59f60800000000000000
-      internalID: 8040543128590762961
+      spriteID: 7cba6329f65684420800000000000000
+      internalID: 2614451113557404615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_1
+      name: LVL 1 COLLISION ASSETS PIC 1_1
       rect:
         serializedVersion: 2
         x: 191
@@ -182,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2aff12c23d3636f30800000000000000
-      internalID: 4567604205713489826
+      spriteID: 455f7f8db430ec290800000000000000
+      internalID: -7868347874672118444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_2
+      name: LVL 1 COLLISION ASSETS PIC 1_2
       rect:
         serializedVersion: 2
         x: 351
@@ -204,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcfbe40a58d940eb0800000000000000
-      internalID: -4754502109350674483
+      spriteID: b5bfc77ac4cce6320800000000000000
+      internalID: 2553202668365216603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_3
+      name: LVL 1 COLLISION ASSETS PIC 1_3
       rect:
         serializedVersion: 2
         x: 511
@@ -226,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73798f7ffdb9c4230800000000000000
-      internalID: 3624443186366682935
+      spriteID: a386cb2483c252b40800000000000000
+      internalID: 5414782747132323898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_4
+      name: LVL 1 COLLISION ASSETS PIC 1_4
       rect:
         serializedVersion: 2
         x: 33
@@ -248,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddae5267f0626cce0800000000000000
-      internalID: -1385377987521287459
+      spriteID: 292441b35ece58fb0800000000000000
+      internalID: -4646046971279949166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_5
+      name: LVL 1 COLLISION ASSETS PIC 1_5
       rect:
         serializedVersion: 2
         x: 129
@@ -270,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a36cec28e0d57a0b0800000000000000
-      internalID: -5717498885018040774
+      spriteID: 778dc20b98bf23e90800000000000000
+      internalID: -7047293898096584585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_6
+      name: LVL 1 COLLISION ASSETS PIC 1_6
       rect:
         serializedVersion: 2
         x: 239
@@ -292,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ffb9bc303129e810800000000000000
-      internalID: 1795002417544806388
+      spriteID: f32640c5444ebfef0800000000000000
+      internalID: -73213986668780993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_7
+      name: LVL 1 COLLISION ASSETS PIC 1_7
       rect:
         serializedVersion: 2
         x: 479
@@ -314,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a0da9fb6bea15f50800000000000000
-      internalID: 6868463006638592162
+      spriteID: 6b04425f888f868b0800000000000000
+      internalID: -5158600106040868682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_8
+      name: LVL 1 COLLISION ASSETS PIC 1_8
       rect:
         serializedVersion: 2
         x: 639
@@ -336,18 +352,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e5d8af581c40d170800000000000000
-      internalID: 8201138589009499622
+      spriteID: 6ac1b7185670c7100800000000000000
+      internalID: 106968623695469734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_9
+      name: LVL 1 COLLISION ASSETS PIC 1_9
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 463
+        width: 288
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f430215505813f0800000000000000
+      internalID: -929904996747358405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL 1 COLLISION ASSETS PIC 1_10
       rect:
         serializedVersion: 2
         x: 33
-        y: 285
+        y: 273
         width: 275
         height: 180
       alignment: 0
@@ -358,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dad1338363576ed70800000000000000
-      internalID: 9072067375116000685
+      spriteID: 4c5cbd73a1bfaee00800000000000000
+      internalID: 1074947551106155972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_10
+      name: LVL 1 COLLISION ASSETS PIC 1_11
       rect:
         serializedVersion: 2
         x: 369
@@ -380,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dfa5a128a7a651a0800000000000000
-      internalID: -6821080245045186608
+      spriteID: 9a08cb4ab81018100800000000000000
+      internalID: 108369565309501609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_11
+      name: LVL 1 COLLISION ASSETS PIC 1_12
       rect:
         serializedVersion: 2
         x: 19
-        y: 2
+        y: 12
         width: 176
-        height: 253
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,20 +440,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b5c71ea69cddbb00800000000000000
-      internalID: 846074844739519921
+      spriteID: c6890d2aa0958cd30800000000000000
+      internalID: 4451906133871859820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_12
+      name: LVL 1 COLLISION ASSETS PIC 1_13
       rect:
         serializedVersion: 2
         x: 232
-        y: 5
+        y: 12
         width: 134
-        height: 221
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +462,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e007592a10a98e10800000000000000
-      internalID: 2200465927170359525
+      spriteID: 408fbacee473f2fb0800000000000000
+      internalID: -4670453476442245116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_13
+      name: LVL 1 COLLISION ASSETS PIC 1_14
       rect:
         serializedVersion: 2
         x: 367
-        y: 1
+        y: 12
         width: 173
-        height: 256
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,20 +484,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbf4f50ab70d0c020800000000000000
-      internalID: 2360115434132295613
+      spriteID: d628234d00f659cb0800000000000000
+      internalID: -4857854573698448787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_14
+      name: LVL 1 COLLISION ASSETS PIC 1_15
       rect:
         serializedVersion: 2
         x: 526
-        y: 0
+        y: 12
         width: 98
-        height: 56
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +506,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b228af78bc61400c0800000000000000
-      internalID: -4610535055105031637
+      spriteID: cd53b3fda84c482d0800000000000000
+      internalID: -3277278528089147940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL 1 COLLISION ASSETS PIC_15
+      name: LVL 1 COLLISION ASSETS PIC 1_16
       rect:
         serializedVersion: 2
         x: 578
-        y: 5
+        y: 12
         width: 127
-        height: 218
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,8 +528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50e345e6d3c10b600800000000000000
-      internalID: 481916210298240517
+      spriteID: fd6da4b0925b1fda0800000000000000
+      internalID: -5912745647873009953
       vertices: []
       indices: 
       edges: []
@@ -509,23 +547,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      LVL 1 COLLISION ASSETS PIC_0: 8040543128590762961
-      LVL 1 COLLISION ASSETS PIC_1: 4567604205713489826
-      LVL 1 COLLISION ASSETS PIC_10: -6821080245045186608
-      LVL 1 COLLISION ASSETS PIC_11: 846074844739519921
-      LVL 1 COLLISION ASSETS PIC_12: 2200465927170359525
-      LVL 1 COLLISION ASSETS PIC_13: 2360115434132295613
-      LVL 1 COLLISION ASSETS PIC_14: -4610535055105031637
-      LVL 1 COLLISION ASSETS PIC_15: 481916210298240517
-      LVL 1 COLLISION ASSETS PIC_2: -4754502109350674483
-      LVL 1 COLLISION ASSETS PIC_3: 3624443186366682935
-      LVL 1 COLLISION ASSETS PIC_4: -1385377987521287459
-      LVL 1 COLLISION ASSETS PIC_5: -5717498885018040774
-      LVL 1 COLLISION ASSETS PIC_6: 1795002417544806388
-      LVL 1 COLLISION ASSETS PIC_7: 6868463006638592162
-      LVL 1 COLLISION ASSETS PIC_8: 8201138589009499622
-      LVL 1 COLLISION ASSETS PIC_9: 9072067375116000685
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
