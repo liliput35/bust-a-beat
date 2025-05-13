@@ -14,7 +14,7 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject);
 
-        if (collision.gameObject.name == "Enemy")
+        if (collision.gameObject.name == "Enemy" || collision.gameObject.name == "WhiteBear")
         {
             EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
             if (enemy != null)

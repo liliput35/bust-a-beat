@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -7,8 +8,10 @@ public class EnemyScript : MonoBehaviour
     public float detectionRange = 3f; 
     public int maxHealth = 5;
 
-    private int currentHealth;
+    public int currentHealth;
     private Vector3 startPoint;
+    private Vector3 lastPosition;
+
     private bool isFacingRight = true;
     private Transform playerTransform;
 
@@ -17,11 +20,18 @@ public class EnemyScript : MonoBehaviour
     public float fireRate = 1f; // seconds between shots
     private float nextFireTime = 0f;
 
+    Animator animator;
+
+
 
     private void Start()
     {
         startPoint = transform.position;
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
+        lastPosition = transform.position;
+
+
 
         GameObject player = GameObject.Find("Guni"); 
         if (player != null)
@@ -46,6 +56,8 @@ public class EnemyScript : MonoBehaviour
                     Shoot();
                     nextFireTime = Time.time + fireRate;
                 }
+
+                animator.SetFloat("xVelocity", 0f);
                 return;
             }
         }
@@ -53,6 +65,12 @@ public class EnemyScript : MonoBehaviour
 
         // Patrol logic
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+        // Calculate actual movement speed
+        float xVelocity = (transform.position.x - lastPosition.x) / Time.deltaTime;
+        animator.SetFloat("xVelocity", Math.Abs(xVelocity));
+
+        lastPosition = transform.position;
 
         float distanceMoved = Vector3.Distance(startPoint, transform.position);
         if (distanceMoved >= patrolDistance)
