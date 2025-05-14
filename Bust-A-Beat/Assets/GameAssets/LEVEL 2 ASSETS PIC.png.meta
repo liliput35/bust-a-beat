@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 3bffa5f44d9ccbd49a241ce49da978d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1319333215632483386
+    second: LEVEL 2 ASSETS PIC_0
+  - first:
+      213: -1780884288051397942
+    second: LEVEL 2 ASSETS PIC_1
+  - first:
+      213: -8341973206777727062
+    second: LEVEL 2 ASSETS PIC_2
+  - first:
+      213: -3964013500369347195
+    second: LEVEL 2 ASSETS PIC_3
+  - first:
+      213: -7101715985797366226
+    second: LEVEL 2 ASSETS PIC_4
+  - first:
+      213: 1211765877196830084
+    second: LEVEL 2 ASSETS PIC_5
+  - first:
+      213: 7750204809317067619
+    second: LEVEL 2 ASSETS PIC_6
+  - first:
+      213: -6736972124692646439
+    second: LEVEL 2 ASSETS PIC_7
+  - first:
+      213: 5301307852120327816
+    second: LEVEL 2 ASSETS PIC_8
+  - first:
+      213: 5313349434300322125
+    second: LEVEL 2 ASSETS PIC_9
+  - first:
+      213: -8551837622084703211
+    second: LEVEL 2 ASSETS PIC_10
+  - first:
+      213: 8421388339233633105
+    second: LEVEL 2 ASSETS PIC_11
+  - first:
+      213: 5297238953571572902
+    second: LEVEL 2 ASSETS PIC_12
+  - first:
+      213: -5162982499145632304
+    second: LEVEL 2 ASSETS PIC_13
+  - first:
+      213: 5948640306500922643
+    second: LEVEL 2 ASSETS PIC_14
+  - first:
+      213: 1412956168891129471
+    second: LEVEL 2 ASSETS PIC_15
+  - first:
+      213: 7620955822429987106
+    second: LEVEL 2 ASSETS PIC_16
+  - first:
+      213: 1721854319877419828
+    second: LEVEL 2 ASSETS PIC_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 677
+        width: 308
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34e52ac1963f4210800000000000000
+      internalID: 1319333215632483386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 677
+        width: 294
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca3f90fc270947e0800000000000000
+      internalID: -1780884288051397942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_2
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 677
+        width: 151
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7ff2ce09b5b3c80800000000000000
+      internalID: -8341973206777727062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_3
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 677
+        width: 292
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dd1a149befcf8c0800000000000000
+      internalID: -3964013500369347195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_4
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 676
+        width: 224
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2eb5daffe2a17d90800000000000000
+      internalID: -7101715985797366226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 628
+        width: 308
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485b14525ae01d010800000000000000
+      internalID: 1211765877196830084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 629
+        width: 294
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b2ed336324e8b60800000000000000
+      internalID: 7750204809317067619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_7
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 629
+        width: 292
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d57cfdeb877182a0800000000000000
+      internalID: -6736972124692646439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 616
+        width: 224
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8860f9a6767029940800000000000000
+      internalID: 5301307852120327816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 181
+        width: 308
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d415efeb82fccb940800000000000000
+      internalID: 5313349434300322125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_10
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 181
+        width: 315
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ce1d60ef4c15980800000000000000
+      internalID: -8551837622084703211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_11
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 180
+        width: 151
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15333ab7318ced470800000000000000
+      internalID: 8421388339233633105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_12
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 181
+        width: 292
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acdef523c2938940800000000000000
+      internalID: 5297238953571572902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_13
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 182
+        width: 224
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5bddc85c66958b0800000000000000
+      internalID: -5162982499145632304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 132
+        width: 308
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dee8d67d0dd8250800000000000000
+      internalID: 5948640306500922643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_15
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 133
+        width: 294
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ed3f14624db9310800000000000000
+      internalID: 1412956168891129471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_16
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 133
+        width: 292
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22162e461f213c960800000000000000
+      internalID: 7620955822429987106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL 2 ASSETS PIC_17
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 122
+        width: 224
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433f343916145e710800000000000000
+      internalID: 1721854319877419828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
