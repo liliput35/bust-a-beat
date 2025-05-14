@@ -16,7 +16,7 @@ public class TrainingObstacleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!hasBeenUsed && collision.name == "Bullet(Clone)")
+        if (!hasBeenUsed && collision.name == "Bullet(Clone)" && gameObject.name.Contains("Dummy"))
         {
             trainingScript.IncrementDummyCount();
             hasBeenUsed = true;

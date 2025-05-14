@@ -1,10 +1,15 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 public class DialogueManager : MonoBehaviour
 {
+    public Animator animator;
+    public Text dialogueText;
+    public Text dialogueName;
+    public Image portraitUI;
     private Queue<string> sentences;
 
     void Start()
@@ -13,8 +18,11 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue) {
-        Debug.Log("Starting Conversation With " + dialogue.name);
 
+        dialogueName.text = dialogue.name;
+        portraitUI.sprite = dialogue.portrait;
+
+        animator.SetBool("isOpen", true);
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences) {
@@ -32,11 +40,22 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     void EndDialogue() {
-        Debug.Log("End of conversation");
+        animator.SetBool("isOpen", false);
     }
 
 }
