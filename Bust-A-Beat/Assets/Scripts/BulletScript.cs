@@ -4,13 +4,27 @@ public class BulletScript : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
+    public float maxDistance = 10f;
+    private Vector2 startPosition;
+
 
     void Start()
     {
         rb.linearVelocity = transform.right * speed;
+        startPosition = transform.position;
+
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+     void Update()
+    {
+        float distanceTraveled = Vector2.Distance(startPosition, transform.position);
+        if (distanceTraveled >= maxDistance)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
 
