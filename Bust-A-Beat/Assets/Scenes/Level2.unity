@@ -7453,9 +7453,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a54557fa2096e43afa314373d64a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartAnimator: {fileID: 1572101811}
   player: {fileID: 2121898684}
   enemy: {fileID: 0}
+  heartsUI: {fileID: 1572101812}
+  fiveHealth: {fileID: 1843460181, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  fourHealth: {fileID: -1384753438, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  threeHealth: {fileID: -1314371151, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  twoHealth: {fileID: 111533217, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  oneHealth: {fileID: -1216268035, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  zeroHealth: {fileID: -102069936, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  showPlayerHealth: 1
 --- !u!95 &1572101811
 Animator:
   serializedVersion: 7

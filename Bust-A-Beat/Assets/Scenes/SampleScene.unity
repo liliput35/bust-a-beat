@@ -2381,7 +2381,6 @@ GameObject:
   - component: {fileID: 1468890543}
   - component: {fileID: 1468890545}
   - component: {fileID: 1468890544}
-  - component: {fileID: 1468890547}
   - component: {fileID: 1468890546}
   m_Layer: 5
   m_Name: Hearts
@@ -2459,31 +2458,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a54557fa2096e43afa314373d64a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartAnimator: {fileID: 1468890547}
   player: {fileID: 2037950993}
   enemy: {fileID: 0}
---- !u!95 &1468890547
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468890542}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 288289918ce40c54f932b661e4582c20, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  heartsUI: {fileID: 1468890544}
+  fiveHealth: {fileID: 1843460181, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  fourHealth: {fileID: -1384753438, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  threeHealth: {fileID: -1314371151, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  twoHealth: {fileID: 111533217, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  oneHealth: {fileID: -1216268035, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  zeroHealth: {fileID: -102069936, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  showPlayerHealth: 1
 --- !u!1 &1540050288
 GameObject:
   m_ObjectHideFlags: 0

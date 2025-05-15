@@ -352,7 +352,6 @@ GameObject:
   - component: {fileID: 459559245471711990}
   - component: {fileID: 4604408948799082789}
   - component: {fileID: 3628419780446525727}
-  - component: {fileID: 7151913406156526509}
   - component: {fileID: 5875446864044126212}
   m_Layer: 5
   m_Name: Hearts
@@ -418,28 +417,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &7151913406156526509
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8076245035229298629}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 288289918ce40c54f932b661e4582c20, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5875446864044126212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +429,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a54557fa2096e43afa314373d64a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartAnimator: {fileID: 7151913406156526509}
   player: {fileID: 0}
   enemy: {fileID: 1552172860359513843}
+  heartsUI: {fileID: 3628419780446525727}
+  fiveHealth: {fileID: 1843460181, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  fourHealth: {fileID: -1384753438, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  threeHealth: {fileID: -1314371151, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  twoHealth: {fileID: 111533217, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  oneHealth: {fileID: -1216268035, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  zeroHealth: {fileID: -102069936, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
+  showPlayerHealth: 0
