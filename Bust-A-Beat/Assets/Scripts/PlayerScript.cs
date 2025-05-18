@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PlayerScript : MonoBehaviour
 {
     float moveSpeed = 5f;
@@ -16,12 +17,15 @@ public class PlayerScript : MonoBehaviour
     public int currentHealth;
 
     public int currentStacks = 0;
+    public StacksBar_Script stacksBar;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
+
+        stacksBar.SetMaxStacks(11);
     }
 
     private void FixedUpdate()
@@ -87,6 +91,8 @@ public class PlayerScript : MonoBehaviour
     {
         currentStacks += amount;
         Debug.Log("Collected Stack. Current stacks: " + currentStacks);
+
+        stacksBar.SetStacks(currentStacks);
 
     }
 }
