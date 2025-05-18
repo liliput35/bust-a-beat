@@ -342,6 +342,7 @@ MonoBehaviour:
   firePoint: {fileID: 6915235225798725711}
   deathPoint: {fileID: 954592837136143040}
   deathFXPrefab: {fileID: 5231408251608836467, guid: 13b835cf7e2768d4f9aab999682f2648, type: 3}
+  coinPrefab: {fileID: 6351770822476224506, guid: 2af48eb396330524b971b47a34f687c2, type: 3}
   bulletPrefab: {fileID: 7118711102977750201, guid: eab13c24cb8fc724780e43108f6a33a6, type: 3}
   fireRate: 1
 --- !u!1 &8076245035229298629

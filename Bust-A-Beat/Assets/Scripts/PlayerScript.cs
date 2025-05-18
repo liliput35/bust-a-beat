@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     public int maxHealth = 5;
     public int currentHealth;
 
+    public int currentStacks = 0;
 
     void Start()
     {
@@ -80,5 +81,12 @@ public class PlayerScript : MonoBehaviour
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         Debug.Log("Player healed. Current health: " + currentHealth);
+    }
+
+    public void CollectStack(int amount)
+    {
+        currentStacks += amount;
+        Debug.Log("Collected Stack. Current stacks: " + currentStacks);
+
     }
 }

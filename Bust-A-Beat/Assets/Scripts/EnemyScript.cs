@@ -18,6 +18,8 @@ public class EnemyScript : MonoBehaviour
     public Transform firePoint;
     public Transform deathPoint;
     public GameObject deathFXPrefab;
+    public GameObject coinPrefab;
+
 
     public GameObject bulletPrefab;
     public float fireRate = 1f; // seconds between shots
@@ -92,6 +94,7 @@ public class EnemyScript : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathFXPrefab, deathPoint.position, deathPoint.rotation);
+            Instantiate(coinPrefab, deathPoint.position, deathPoint.rotation);
             Die();
         }
     }
