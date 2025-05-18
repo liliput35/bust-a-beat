@@ -6166,6 +6166,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2975191668537806214, guid: d1521c4b2bcdea34aa64718e32a2236f, type: 3}
+      propertyPath: maxStacks
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975191668537806214, guid: d1521c4b2bcdea34aa64718e32a2236f, type: 3}
       propertyPath: stacksBar
       value: 
       objectReference: {fileID: 1643423444}
