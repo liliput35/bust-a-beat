@@ -169,6 +169,7 @@ Transform:
   m_Children:
   - {fileID: 6915235225798725711}
   - {fileID: 2107759612439887356}
+  - {fileID: 954592837136143040}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5313350647781669825
@@ -339,6 +340,8 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   firePoint: {fileID: 6915235225798725711}
+  deathPoint: {fileID: 954592837136143040}
+  deathFXPrefab: {fileID: 5231408251608836467, guid: 13b835cf7e2768d4f9aab999682f2648, type: 3}
   bulletPrefab: {fileID: 7118711102977750201, guid: eab13c24cb8fc724780e43108f6a33a6, type: 3}
   fireRate: 1
 --- !u!1 &8076245035229298629
@@ -439,3 +442,34 @@ MonoBehaviour:
   oneHealth: {fileID: -1216268035, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
   zeroHealth: {fileID: -102069936, guid: aa14cc9d4f85ee74487f2adddd91ae0f, type: 3}
   showPlayerHealth: 0
+--- !u!1 &9207663269145010737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954592837136143040}
+  m_Layer: 0
+  m_Name: DeathPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &954592837136143040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9207663269145010737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.418, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6312849673958531733}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
