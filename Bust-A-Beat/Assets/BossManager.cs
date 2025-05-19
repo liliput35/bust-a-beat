@@ -6,24 +6,24 @@ public class BossManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
 
+    private DialogueTrigger dialogueTrigger;
 
     void Start()
     {
-        
+        dialogueTrigger = GetComponent<DialogueTrigger>();
+        dialogueTrigger.TriggerDialogue();
     }
 
     // Update is called once per frame
-    void Update()
+    public void StartMusic()
     {
         if (!startPlaying)
         {
-            if (Input.anyKeyDown)
-            {
-                startPlaying = true;
-                theBS.hasStarted = true;
+            
+            startPlaying = true;
+            theBS.hasStarted = true;
 
-                theMusic.Play();
-            }
+            theMusic.Play();
         }
     }
 }

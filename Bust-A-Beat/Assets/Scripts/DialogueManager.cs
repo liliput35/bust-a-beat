@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueName;
     public Image portraitUI;
     private Queue<string> sentences;
+    public bool isBoss = false;
 
     void Start()
     {
@@ -56,6 +57,10 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         animator.SetBool("isOpen", false);
+        if (isBoss)
+        {
+            FindFirstObjectByType<BossManager>().StartMusic();
+        }
     }
 
 }
