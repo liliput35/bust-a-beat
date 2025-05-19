@@ -2406,6 +2406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624227611}
   - component: {fileID: 624227610}
+  - component: {fileID: 624227612}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2427,6 +2428,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformCounterText: {fileID: 1559954111}
   dummyCounterText: {fileID: 1358015552}
+  levelCompleted: 0
+  player: {fileID: 1998676773}
+  dialogueTrigger: {fileID: 624227612}
 --- !u!4 &624227611
 Transform:
   m_ObjectHideFlags: 0
@@ -2442,6 +2446,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624227612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624227609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5a084601d21e248b9ec6e764dad53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: ????
+    portrait: {fileID: 4116872223839236384, guid: 9ada9c1a0ca66104f807de5dae535cd6, type: 3}
+    sentences:
+    - Well done Guni
 --- !u!1001 &637875707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2551,6 +2572,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1524997067}
   dialogueName: {fileID: 1670182882}
   portraitUI: {fileID: 394482314}
+  isBoss: 0
+  bossManager: {fileID: 0}
 --- !u!4 &657039831
 Transform:
   m_ObjectHideFlags: 0
@@ -9125,6 +9148,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 499190630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1998676773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3298487915724792634, guid: d1521c4b2bcdea34aa64718e32a2236f, type: 3}
+  m_PrefabInstance: {fileID: 1879797718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2000853503
 GameObject:
   m_ObjectHideFlags: 0

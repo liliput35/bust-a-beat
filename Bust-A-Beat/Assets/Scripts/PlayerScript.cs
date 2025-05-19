@@ -27,7 +27,9 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
 
-        stacksBar.SetMaxStacks(maxStacks);
+        if (stacksBar != null) {
+            stacksBar.SetMaxStacks(maxStacks);
+        }
     }
 
     private void FixedUpdate()

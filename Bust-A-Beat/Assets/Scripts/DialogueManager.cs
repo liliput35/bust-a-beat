@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class DialogueManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     public bool isBoss = false;
     public BossManager bossManager;
+    
 
     void Start()
     {
@@ -58,7 +60,9 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         animator.SetBool("isOpen", false);
-        if (isBoss) {
+        
+        if (isBoss)
+        {
             bossManager.StartMusic();
         }
     }

@@ -12,6 +12,16 @@ public class TrainingScript : MonoBehaviour
     private int totalDummies = 5;
     private int totalPlatforms = 3;
 
+    public bool levelCompleted;
+
+    public GameObject player;
+    private Rigidbody2D playerRb;
+
+    private bool hasMovedPlayer = false;
+
+    public DialogueTrigger dialogueTrigger;
+
+
     public void IncrementPlatformCount()
     {
         platformsJumped++;
@@ -19,7 +29,9 @@ public class TrainingScript : MonoBehaviour
         if (platformsJumped <= 3)
         {
             UpdatePlatformText();
-        }
+        } 
+
+        CheckStatus();
     }
 
     private void UpdatePlatformText()
@@ -36,10 +48,32 @@ public class TrainingScript : MonoBehaviour
         {
             UpdateDummyText();
         }
+
+        CheckStatus();
     }
 
     private void UpdateDummyText()
     {
         dummyCounterText.text = $"Shoot Dummies: {dummiesHit}/{totalDummies}";
+    }
+
+    private void CheckStatus(){
+        if(dummiesHit >= totalDummies && platformsJumped >= totalPlatforms){
+            levelCompleted = true;
+
+            if(levelCompleted && !hasMovedPlayer){
+                playerRb = player.GetComponent<Rigidbody2D>();
+                playerRb.position = new Vector2(-19f, -1.05f);
+                hasMovedPlayer = true;
+
+                TriggerCompletedDialogue();
+            }
+        }
+
+
+    }
+
+    public void TriggerCompletedDialogue(){
+        dialogueTrigger.TriggerDialogue();
     }
 }
