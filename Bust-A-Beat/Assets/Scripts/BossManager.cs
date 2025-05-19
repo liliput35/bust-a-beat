@@ -5,17 +5,33 @@ public class BossManager : MonoBehaviour
     public AudioSource theMusic;
     public bool startPlaying;
     public BeatScroller theBS;
+    private bool started = false;
 
-    public DialogueTrigger dialogueTrigger;
 
-    void Start()
+    private DialogueTrigger theTrigger;
+    public DialogueManager dialogueManager;
+
+    void Awake()
     {
-        dialogueTrigger.TriggerDialogue();
+        theTrigger = GetComponent<DialogueTrigger>();
+        theTrigger.TriggerDialogue();
+
+        
+    }
+
+    void Update()
+    {
+        if (!startPlaying && !started && dialogueManager.doneDialogue)
+        {
+            StartMusic();
+            started = true; 
+        }
+
     }
 
     public void StartMusic()
     {
-        if (!startPlaying)
+        if (!startPlaying )
         {
             
             startPlaying = true;

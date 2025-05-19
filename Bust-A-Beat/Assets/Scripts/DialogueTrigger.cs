@@ -8,6 +8,5 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindFirstObjectByType<DialogueManager>().StartDialogue(dialogue);
         
-
     }
 }

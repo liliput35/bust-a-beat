@@ -11,16 +11,12 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueName;
     public Image portraitUI;
 
-    private Queue<string> sentences = new Queue<string>();
+    private Queue<string> sentences ;
 
-    public bool isBoss = false;
-    public BossManager bossManager;
-
-    public bool hasCompletedTraining = false;
+    public bool doneDialogue;
 
 
-
-    void Start()
+    void Awake()
     {
         sentences = new Queue<string>();
     }
@@ -43,19 +39,30 @@ public class DialogueManager : MonoBehaviour
 
 
     public void DisplayNextSentence() {
-        if (sentences.Count == 0) {
+        Debug.Log("DisplayNextSentence called");
+
+        if (sentences.Count == 0)
+        {
             EndDialogue();
             return;
         }
+        else {
+            string sentence = sentences.Dequeue();
+            Debug.Log(sentences.Count);
+            Debug.Log(sentence);
 
-        string sentence = sentences.Dequeue();
 
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
+        }
+
+            
     }
 
     IEnumerator TypeSentence(string sentence)
     {
+        Debug.Log(sentences.Count + "from typeSentence");
+
         dialogueText.text = "";
         foreach(char letter in sentence.ToCharArray())
         {
@@ -67,15 +74,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue() {
         animator.SetBool("isOpen", false);
 
-        /*if (hasCompletedTraining && !isBoss)
-        {
-            FindFirstObjectByType<TrainingScript>().ToBossFight();
-        }*/
-
-        if (isBoss)
-        {
-            bossManager.StartMusic();
-        }
+        doneDialogue = true;
     }
 
 }

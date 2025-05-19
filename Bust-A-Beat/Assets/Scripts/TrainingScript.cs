@@ -21,6 +21,15 @@ public class TrainingScript : MonoBehaviour
     private bool hasMovedPlayer = false;
 
     public DialogueTrigger dialogueTrigger;
+    public DialogueManager dialogueManager;
+
+    void Update()
+    {
+        if (levelCompleted && dialogueManager.doneDialogue)
+        {
+            LoadBossFight();
+        }
+    }
 
 
     public void IncrementPlatformCount()
@@ -67,6 +76,7 @@ public class TrainingScript : MonoBehaviour
                 playerRb.position = new Vector2(-19f, -1.05f);
                 hasMovedPlayer = true;
 
+                dialogueManager.doneDialogue = false;
                 TriggerCompletedDialogue();
             }
         }
@@ -76,11 +86,11 @@ public class TrainingScript : MonoBehaviour
 
     public void TriggerCompletedDialogue(){
         dialogueTrigger.TriggerDialogue();
-        //FindFirstObjectByType<DialogueManager>().hasCompletedTraining = levelCompleted;
     }
 
-    public void ToBossFight()
+    public void LoadBossFight()
     {
         SceneManager.LoadScene(4);
     }
+
 }

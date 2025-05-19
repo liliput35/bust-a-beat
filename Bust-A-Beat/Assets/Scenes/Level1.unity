@@ -2431,6 +2431,7 @@ MonoBehaviour:
   levelCompleted: 0
   player: {fileID: 1998676773}
   dialogueTrigger: {fileID: 624227612}
+  dialogueManager: {fileID: 657039830}
 --- !u!4 &624227611
 Transform:
   m_ObjectHideFlags: 0
@@ -2464,6 +2465,7 @@ MonoBehaviour:
     sentences:
     - Well done Guni.
     - Now lets see how well you do in busting beats.
+    - Ready?
 --- !u!1001 &637875707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2573,9 +2575,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1524997067}
   dialogueName: {fileID: 1670182882}
   portraitUI: {fileID: 394482314}
-  isBoss: 0
-  bossManager: {fileID: 0}
-  hasCompletedTraining: 0
+  doneDialogue: 0
 --- !u!4 &657039831
 Transform:
   m_ObjectHideFlags: 0
