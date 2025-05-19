@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -79,6 +80,10 @@ public class PlayerScript : MonoBehaviour
         Debug.Log("Player took damage. Current health: " + currentHealth);
         // TODO: Add visual feedback, check for death, etc.
         animator.SetTrigger("isHit");
+        if(currentHealth == 0)
+        {
+            Die();
+        }
     }
 
     public void Heal(int amount)
@@ -95,5 +100,17 @@ public class PlayerScript : MonoBehaviour
 
         stacksBar.SetStacks(currentStacks);
 
+    }
+
+    public void Die()
+    {
+        StartCoroutine(DieRoutine());
+    }
+
+    private IEnumerator DieRoutine()
+    {
+        animator.SetTrigger("Die");
+        yield return new WaitForSeconds(1f); // Wait for animation to play
+        gameObject.SetActive(false);
     }
 }
