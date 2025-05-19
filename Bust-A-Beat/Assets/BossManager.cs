@@ -6,11 +6,11 @@ public class BossManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
 
-    private DialogueTrigger dialogueTrigger;
+    public DialogueTrigger dialogueTrigger;
 
     void Start()
     {
-        dialogueTrigger = GetComponent<DialogueTrigger>();
+
         dialogueTrigger.TriggerDialogue();
     }
 
