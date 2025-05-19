@@ -13,7 +13,7 @@ public class MysteriousScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.name == "Guni" && dialogueTrigger != null && !hasTriggered)
+        if (other.name == "Guni" && dialogueTrigger != null )
         {
             Debug.Log("hit");
             dialogueTrigger.TriggerDialogue();

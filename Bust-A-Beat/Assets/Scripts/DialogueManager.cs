@@ -2,8 +2,6 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Diagnostics;
 
 
 public class DialogueManager : MonoBehaviour
@@ -14,9 +12,6 @@ public class DialogueManager : MonoBehaviour
     public Image portraitUI;
     private Queue<string> sentences;
     public bool isBoss = false;
-
-    public TrainingScript trainingScript;
-
 
     void Start()
     {
@@ -62,17 +57,9 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         animator.SetBool("isOpen", false);
-        UnityEngine.Debug.Log(trainingScript.isCompleted);
-
         if (isBoss)
         {
             FindFirstObjectByType<BossManager>().StartMusic();
-        }
-
-        if (trainingScript.isCompleted)
-        {
-            SceneManager.LoadScene(4);
-            trainingScript.isCompleted = false;
         }
     }
 
