@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2098545302}
+      - m_Target: {fileID: 1627643066}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
@@ -4967,6 +4967,7 @@ MonoBehaviour:
   theMusic: {fileID: 1872570997}
   startPlaying: 0
   theBS: {fileID: 938418536}
+  dialogueTrigger: {fileID: 1320397799}
 --- !u!114 &1320397799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4983,7 +4984,8 @@ MonoBehaviour:
     name: ????
     portrait: {fileID: 4116872223839236384, guid: 9ada9c1a0ca66104f807de5dae535cd6, type: 3}
     sentences:
-    - Hi.
+    - Hello
+    - Hi
 --- !u!1 &1323698733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6210,6 +6212,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1627643065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627643067}
+  - component: {fileID: 1627643066}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1627643066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627643065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e539be0ba09b4de428b90a9782304d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 764398726}
+  dialogueText: {fileID: 1160924457}
+  dialogueName: {fileID: 469469849}
+  portraitUI: {fileID: 1397860559}
+  isBoss: 1
+  bossManager: {fileID: 1320397798}
+--- !u!4 &1627643067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627643065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 946.38245, y: 75.39523, z: 4.5440574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639991356
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,55 +8087,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2098545301
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2098545303}
-  - component: {fileID: 2098545302}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2098545302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098545301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e539be0ba09b4de428b90a9782304d6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 764398726}
-  dialogueText: {fileID: 1160924457}
-  dialogueName: {fileID: 469469849}
-  portraitUI: {fileID: 1397860559}
-  isBoss: 1
---- !u!4 &2098545303
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098545301}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 946.38245, y: 75.39523, z: 4.5440574}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2116419053
 GameObject:
   m_ObjectHideFlags: 0
@@ -8557,4 +8560,4 @@ SceneRoots:
   - {fileID: 1872570998}
   - {fileID: 1307583679}
   - {fileID: 444334509}
-  - {fileID: 2098545303}
+  - {fileID: 1627643067}
