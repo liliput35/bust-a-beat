@@ -18,6 +18,7 @@ public class TrainingScript : MonoBehaviour
     private Rigidbody2D playerRb;
     private bool hasMovedPlayer = false;
 
+    private DialogueTrigger dialogueTrigger;
 
 
     void Start()
@@ -38,7 +39,15 @@ public class TrainingScript : MonoBehaviour
             playerRb.position = new Vector2(-19f, -1.05f);
             hasMovedPlayer = true;
 
+            dialogueTrigger = GetComponent<DialogueTrigger>();
+            dialogueTrigger.TriggerDialogue();
+
+
             isCompleted = false;
+
+            
+
+            
         }
     }
 
