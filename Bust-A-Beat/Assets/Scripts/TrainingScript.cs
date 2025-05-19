@@ -12,6 +12,45 @@ public class TrainingScript : MonoBehaviour
     private int totalDummies = 5;
     private int totalPlatforms = 3;
 
+    public bool isCompleted;
+
+    public GameObject player;
+    private Rigidbody2D playerRb;
+    private bool hasMovedPlayer = false;
+
+    private DialogueTrigger dialogueTrigger;
+
+
+    void Start()
+    {
+        playerRb = player.GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        if(platformsJumped == totalPlatforms && dummiesHit == totalDummies && !hasMovedPlayer)
+        {
+            isCompleted = true;
+        }
+
+        if (isCompleted)
+        {
+            Debug.Log("Moving player with Rigidbody2D...");
+            playerRb.position = new Vector2(-19f, -1.05f);
+            hasMovedPlayer = true;
+
+            dialogueTrigger = GetComponent<DialogueTrigger>();
+            dialogueTrigger.TriggerDialogue();
+
+
+            isCompleted = false;
+
+            
+
+            
+        }
+    }
+
     public void IncrementPlatformCount()
     {
         platformsJumped++;
