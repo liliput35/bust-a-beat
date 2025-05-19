@@ -222,6 +222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &64363182
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &108225638
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -445,6 +449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &126859403
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -584,6 +590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &205490243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -723,6 +731,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &213045301
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -862,6 +872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &238835842
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1137,6 +1149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &272057471
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1276,6 +1290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &277832628
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1525,6 +1541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &325996137
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1897,6 +1915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &328289941
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1981,6 +2001,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &360950906
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2120,6 +2142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &384268310
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2211,6 +2235,94 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &457227691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457227692}
+  - component: {fileID: 457227693}
+  m_Layer: 5
+  m_Name: EnemyBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &457227692
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457227691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 893841326}
+  m_Father: {fileID: 1840422340}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -277.98, y: 103.82}
+  m_SizeDelta: {x: 555.95, y: 97.091}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &457227693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457227691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 893841326}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 44
+  m_WholeNumbers: 1
+  m_Value: 44
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &529138797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &578815746
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2508,6 +2622,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &598318490
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2599,6 +2715,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &648507298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 648507299}
+  - component: {fileID: 648507301}
+  - component: {fileID: 648507300}
+  m_Layer: 5
+  m_Name: Pps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &648507299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648507298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1877729116}
+  m_Father: {fileID: 893841326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 19.1, y: 9.7}
+  m_SizeDelta: {x: 91.4217, y: 167.3281}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &648507300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648507298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4116872223839236384, guid: 9ada9c1a0ca66104f807de5dae535cd6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &648507301
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648507298}
+  m_CullTransparentMesh: 1
 --- !u!1 &697405573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +2839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &697405576
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2786,6 +2980,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &702150099
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2877,6 +3073,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &710981791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710981792}
+  - component: {fileID: 710981794}
+  - component: {fileID: 710981793}
+  m_Layer: 5
+  m_Name: GuniFill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &710981792
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710981791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 933693455}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &710981793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710981791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.45759168, g: 0.7230823, b: 0.8584906, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &710981794
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710981791}
+  m_CullTransparentMesh: 1
 --- !u!1 &768021170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,6 +3688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &882184797
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3508,6 +3781,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &893841325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893841326}
+  - component: {fileID: 893841328}
+  - component: {fileID: 893841327}
+  m_Layer: 5
+  m_Name: EnemyFill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &893841326
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893841325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 648507299}
+  m_Father: {fileID: 457227692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &893841327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893841325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.2688679, b: 0.2688679, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &893841328
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893841325}
+  m_CullTransparentMesh: 1
 --- !u!1 &933150851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,6 +3905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &933150854
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3647,6 +3998,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &933693454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933693455}
+  m_Layer: 5
+  m_Name: ProgressBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &933693455
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933693454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 710981792}
+  m_Father: {fileID: 1840422340}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -1.4337, y: 103.82}
+  m_SizeDelta: {x: 1109.0342, y: 97.0911}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &937724622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,6 +4251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1054685533
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4058,6 +4447,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1063654191
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4142,6 +4533,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1096440893
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4281,6 +4674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1099924715
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4420,6 +4815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1264425790
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4559,6 +4956,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1286587715
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4778,6 +5177,8 @@ MonoBehaviour:
   startPlaying: 0
   theBS: {fileID: 938418536}
   dialogueManager: {fileID: 247880631}
+  score: 0
+  slider: {fileID: 457227693}
 --- !u!114 &1320397799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5023,6 +5424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1357885641
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5162,6 +5565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1358100740
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5301,6 +5706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1358770908
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5440,6 +5847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1418131445
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5846,6 +6255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1540701569
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5930,6 +6341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1605437186
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6069,6 +6482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1623782796
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6208,6 +6623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 97
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1639991359
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6347,6 +6764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1676088620
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6486,6 +6905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1681650486
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6713,6 +7134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1802405755
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6852,6 +7275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1808103756
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6991,6 +7416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1827503694
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7177,6 +7604,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 800465651}
+  - {fileID: 933693455}
+  - {fileID: 457227692}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7313,6 +7742,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1877729115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1877729116}
+  - component: {fileID: 1877729118}
+  - component: {fileID: 1877729117}
+  m_Layer: 5
+  m_Name: GuniPP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1877729116
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877729115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 648507299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 101.6, y: 0.0000019073}
+  m_SizeDelta: {x: 118.1823, y: 139.49}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1877729117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877729115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -108811740299556139, guid: b6ef1a6180b332e44b936157af5f2b64, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1877729118
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877729115}
+  m_CullTransparentMesh: 1
 --- !u!1 &1919443399
 GameObject:
   m_ObjectHideFlags: 0
@@ -7361,6 +7865,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1919443402
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7500,6 +8006,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &1999650880
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7718,6 +8226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &2048154224
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7857,6 +8367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 119
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &2051247436
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7996,6 +8508,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &2082280744
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8135,6 +8649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 100
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &2116419056
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8452,6 +8968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 115
+  playerScore: 0
+  bossManager: {fileID: 0}
 --- !u!58 &2140648612
 CircleCollider2D:
   m_ObjectHideFlags: 0

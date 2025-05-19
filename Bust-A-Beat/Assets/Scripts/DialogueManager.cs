@@ -39,7 +39,6 @@ public class DialogueManager : MonoBehaviour
 
 
     public void DisplayNextSentence() {
-        Debug.Log("DisplayNextSentence called");
 
         if (sentences.Count == 0)
         {
@@ -48,9 +47,7 @@ public class DialogueManager : MonoBehaviour
         }
         else {
             string sentence = sentences.Dequeue();
-            Debug.Log(sentences.Count);
-            Debug.Log(sentence);
-
+            
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
@@ -61,7 +58,6 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
-        Debug.Log(sentences.Count + "from typeSentence");
 
         dialogueText.text = "";
         foreach(char letter in sentence.ToCharArray())

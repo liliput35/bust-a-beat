@@ -4,11 +4,12 @@ public class NoteScript : MonoBehaviour
 {
     public bool canBePressed;
     public KeyCode keyToPress;
-
+    public int playerScore;
+    public BossManager bossManager;
 
     void Start()
     {
-        
+        bossManager = FindFirstObjectByType<BossManager>();
     }
 
     void Update()
@@ -17,6 +18,12 @@ public class NoteScript : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
+                playerScore += 1;
+                
+                bossManager.score += 1;
+                bossManager.UpdateSlider();
+                
+
             }
         }
     }

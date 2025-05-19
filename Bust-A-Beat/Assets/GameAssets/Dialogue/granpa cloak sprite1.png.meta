@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9ada9c1a0ca66104f807de5dae535cd6
+guid: 49e2932074c10f042bc3b023f50258ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4116872223839236384
-    second: granpa cloak sprite1 (1)_0
+      213: -2868726459875209176
+    second: granpa cloak sprite1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: granpa cloak sprite1 (1)_0
+      name: granpa cloak sprite1_0
       rect:
         serializedVersion: 2
-        x: 250
+        x: 138
         y: 0
-        width: 890
-        height: 1629
+        width: 891
+        height: 1264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0213c97b971122930800000000000000
-      internalID: 4116872223839236384
+      spriteID: 820df51eb7c3038d0800000000000000
+      internalID: -2868726459875209176
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      granpa cloak sprite1 (1)_0: 4116872223839236384
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

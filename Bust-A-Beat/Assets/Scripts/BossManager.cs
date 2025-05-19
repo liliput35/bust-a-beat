@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class BossManager : MonoBehaviour
 
     private DialogueTrigger theTrigger;
     public DialogueManager dialogueManager;
+
+    public int score = 0;
+    public Slider slider;
 
     void Awake()
     {
@@ -27,6 +31,8 @@ public class BossManager : MonoBehaviour
             started = true; 
         }
 
+        
+
     }
 
     public void StartMusic()
@@ -39,5 +45,12 @@ public class BossManager : MonoBehaviour
 
             theMusic.Play();
         }
+    }
+
+    public void UpdateSlider()
+    {
+        Debug.Log("called slider update" + score);
+        slider.maxValue = 44;
+        slider.value = 44 - score;
     }
 }
