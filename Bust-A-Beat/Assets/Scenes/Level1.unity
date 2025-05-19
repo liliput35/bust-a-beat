@@ -2462,7 +2462,8 @@ MonoBehaviour:
     name: ????
     portrait: {fileID: 4116872223839236384, guid: 9ada9c1a0ca66104f807de5dae535cd6, type: 3}
     sentences:
-    - Well done Guni
+    - Well done Guni.
+    - Now lets see how well you do in busting beats.
 --- !u!1001 &637875707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2574,6 +2575,7 @@ MonoBehaviour:
   portraitUI: {fileID: 394482314}
   isBoss: 0
   bossManager: {fileID: 0}
+  hasCompletedTraining: 0
 --- !u!4 &657039831
 Transform:
   m_ObjectHideFlags: 0

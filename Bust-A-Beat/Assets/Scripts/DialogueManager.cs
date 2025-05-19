@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 public class DialogueManager : MonoBehaviour
@@ -11,10 +10,15 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Text dialogueName;
     public Image portraitUI;
-    private Queue<string> sentences;
+
+    private Queue<string> sentences = new Queue<string>();
+
     public bool isBoss = false;
     public BossManager bossManager;
-    
+
+    public bool hasCompletedTraining = false;
+
+
 
     void Start()
     {
@@ -27,6 +31,7 @@ public class DialogueManager : MonoBehaviour
         portraitUI.sprite = dialogue.portrait;
 
         animator.SetBool("isOpen", true);
+
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences) {
@@ -44,6 +49,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -60,7 +66,12 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         animator.SetBool("isOpen", false);
-        
+
+        /*if (hasCompletedTraining && !isBoss)
+        {
+            FindFirstObjectByType<TrainingScript>().ToBossFight();
+        }*/
+
         if (isBoss)
         {
             bossManager.StartMusic();

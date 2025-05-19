@@ -13,7 +13,6 @@ public class BossManager : MonoBehaviour
         dialogueTrigger.TriggerDialogue();
     }
 
-    // Update is called once per frame
     public void StartMusic()
     {
         if (!startPlaying)

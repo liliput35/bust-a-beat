@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TrainingScript : MonoBehaviour
 {
@@ -75,5 +76,11 @@ public class TrainingScript : MonoBehaviour
 
     public void TriggerCompletedDialogue(){
         dialogueTrigger.TriggerDialogue();
+        //FindFirstObjectByType<DialogueManager>().hasCompletedTraining = levelCompleted;
+    }
+
+    public void ToBossFight()
+    {
+        SceneManager.LoadScene(4);
     }
 }
