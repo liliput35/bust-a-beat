@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 
 public class PlayerScript : MonoBehaviour
@@ -20,6 +21,8 @@ public class PlayerScript : MonoBehaviour
     public int currentStacks = 0;
     public int maxStacks;
     public StacksBar_Script stacksBar;
+
+    public Transform spawnLoc;
 
     void Start()
     {
@@ -100,19 +103,27 @@ public class PlayerScript : MonoBehaviour
         currentStacks += amount;
         Debug.Log("Collected Stack. Current stacks: " + currentStacks);
 
-        stacksBar.SetStacks(currentStacks);
+        if(stacksBar != null)
+        {
+            stacksBar.SetStacks(currentStacks);
+
+        }
 
     }
 
     public void Die()
     {
         StartCoroutine(DieRoutine());
+
     }
 
     private IEnumerator DieRoutine()
     {
         animator.SetTrigger("Die");
         yield return new WaitForSeconds(1f); // Wait for animation to play
-        gameObject.SetActive(false);
+        
+        rb.position = new Vector2(spawnLoc.position.x, spawnLoc.position.y);
+        currentHealth = 5;
+
     }
 }

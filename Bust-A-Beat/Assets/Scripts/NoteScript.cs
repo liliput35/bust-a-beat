@@ -24,6 +24,8 @@ public class NoteScript : MonoBehaviour
 
                     playerScore += 1;
                     bossManager.score += 1;
+                    bossManager.hitStreak += 1;
+                    bossManager.enemyHitStreak = 0;
                     bossManager.UpdateSlider(false);
                 }
             }
@@ -44,6 +46,8 @@ public class NoteScript : MonoBehaviour
         {
             canBePressed = false;
             bossManager.enemyScore += 1;
+            bossManager.hitStreak = 0;
+            bossManager.enemyHitStreak += 1;
             bossManager.UpdateSlider(true);
         }
     }

@@ -12,9 +12,22 @@ public class BossManager : MonoBehaviour
     private DialogueTrigger theTrigger;
     public DialogueManager dialogueManager;
 
+    public DialogueTrigger levelCompleteDia;
+
+    public Transform firePoint;
+    public GameObject bulletPrefab;
+
+    public Transform notePoint;
+    public GameObject notesFX;
+
     public int enemyScore = 0;
     public int score = 0;
     public Slider slider;
+    public int hitStreak = 0;
+    public int enemyHitStreak = 0;
+
+    public Animator enemyAnimator;
+
 
     void Awake()
     {
@@ -33,7 +46,7 @@ public class BossManager : MonoBehaviour
             started = true; 
         }
 
-        if (score >= 22 && !levelCompleted)
+        if (slider.value == 0 && !levelCompleted)
         {
             levelCompleted = true;
             if (levelCompleted)
@@ -43,6 +56,21 @@ public class BossManager : MonoBehaviour
             }
         }
 
+        if (hitStreak == 4)
+        {
+            Debug.Log("4 note hit streak!");
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            hitStreak = 0;
+        }
+
+        if (enemyHitStreak == 4) {
+            Debug.Log("4 note enemy hit streak!");
+            enemyAnimator.SetTrigger("Streak");
+            Instantiate(notesFX, notePoint.position, notePoint.rotation);
+
+
+            enemyHitStreak = 0;
+        }
     }
 
     public void StartMusic()
@@ -59,7 +87,7 @@ public class BossManager : MonoBehaviour
 
     public void UpdateSlider(bool isEnemy)
     {
-        Debug.Log("player: " + score + " enemy: " + enemyScore);
+        //Debug.Log("player: " + score + " enemy: " + enemyScore);
         if (isEnemy) { 
             slider.value += 1;
 
@@ -72,6 +100,8 @@ public class BossManager : MonoBehaviour
 
     public void FinishLevel()
     {
-        Debug.Log("Level completed. you took down mysterious strange");
+        levelCompleteDia.TriggerDialogue();
     }
+
+    
 }

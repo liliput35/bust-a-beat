@@ -3411,6 +3411,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformCounterText: {fileID: 0}
   dummyCounterText: {fileID: 0}
+  levelCompleted: 0
+  player: {fileID: 0}
+  dialogueTrigger: {fileID: 0}
+  dialogueManager: {fileID: 0}
 --- !u!4 &686656713
 Transform:
   m_ObjectHideFlags: 0
@@ -6213,6 +6217,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2975191668537806214, guid: d1521c4b2bcdea34aa64718e32a2236f, type: 3}
+      propertyPath: spawnLoc
+      value: 
+      objectReference: {fileID: 1319429996}
+    - target: {fileID: 2975191668537806214, guid: d1521c4b2bcdea34aa64718e32a2236f, type: 3}
       propertyPath: maxStacks
       value: 11
       objectReference: {fileID: 0}
@@ -6529,6 +6537,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.48, y: 0.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1319429995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319429996}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1319429996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319429995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.5, y: -2.44, z: -9.936477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7069,7 +7108,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogueName: {fileID: 0}
   portraitUI: {fileID: 0}
-  isBoss: 0
+  doneDialogue: 0
 --- !u!4 &1457950874
 Transform:
   m_ObjectHideFlags: 0
@@ -10837,3 +10876,4 @@ SceneRoots:
   - {fileID: 307415522}
   - {fileID: 2064434728}
   - {fileID: 1954900711}
+  - {fileID: 1319429996}

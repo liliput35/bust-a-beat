@@ -824,6 +824,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &234270759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234270760}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234270760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234270759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.725, y: -1.506, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 310907777}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &238835839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,7 +1499,8 @@ Transform:
   m_LocalPosition: {x: 2.85, y: 1.02, z: -9.42}
   m_LocalScale: {x: 2.1618, y: 2.1618, z: 2.1618}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 234270760}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!95 &310907778
@@ -2408,7 +2440,8 @@ Transform:
   m_LocalPosition: {x: -3.66, y: 0.95, z: -9.5}
   m_LocalScale: {x: 2.1724741, y: 2.1724741, z: 2.1724741}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 760362820}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &529138800
@@ -3148,6 +3181,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710981791}
   m_CullTransparentMesh: 1
+--- !u!1 &760362819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760362820}
+  m_Layer: 0
+  m_Name: NotePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &760362820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760362819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.062, y: -0.677, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 529138799}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &768021170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4831,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1219010412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219010414}
+  - component: {fileID: 1219010413}
+  m_Layer: 0
+  m_Name: FinishDIalogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1219010413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219010412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5a084601d21e248b9ec6e764dad53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: ???
+    portrait: {fileID: -2868726459875209176, guid: 49e2932074c10f042bc3b023f50258ae, type: 3}
+    sentences:
+    - Good job.
+    - You have now mastered the art of rhythm combat.
+    - You are now ready to take down the BW Bears
+--- !u!4 &1219010414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219010412}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6486363, y: 0.9053261, z: -9.958059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264425787
 GameObject:
   m_ObjectHideFlags: 0
@@ -5177,9 +5292,17 @@ MonoBehaviour:
   startPlaying: 0
   theBS: {fileID: 938418536}
   dialogueManager: {fileID: 247880631}
+  levelCompleteDia: {fileID: 1219010413}
+  firePoint: {fileID: 234270760}
+  bulletPrefab: {fileID: 2259612311429371428, guid: 22d31115634998f42af4266bf35212e4, type: 3}
+  notePoint: {fileID: 760362820}
+  notesFX: {fileID: 646668241982371325, guid: ad2ff37ae77387a4abbf445cb57ce5d6, type: 3}
   enemyScore: 0
   score: 0
   slider: {fileID: 457227693}
+  hitStreak: 0
+  enemyHitStreak: 0
+  enemyAnimator: {fileID: 529138800}
 --- !u!114 &1320397799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7604,9 +7727,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 800465651}
   - {fileID: 933693455}
   - {fileID: 457227692}
+  - {fileID: 800465651}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9080,3 +9203,4 @@ SceneRoots:
   - {fileID: 938418537}
   - {fileID: 1872570998}
   - {fileID: 247880632}
+  - {fileID: 1219010414}
