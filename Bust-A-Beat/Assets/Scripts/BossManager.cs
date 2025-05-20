@@ -7,11 +7,12 @@ public class BossManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
     private bool started = false;
-
+    private bool levelCompleted = false;
 
     private DialogueTrigger theTrigger;
     public DialogueManager dialogueManager;
 
+    public int enemyScore = 0;
     public int score = 0;
     public Slider slider;
 
@@ -20,7 +21,8 @@ public class BossManager : MonoBehaviour
         theTrigger = GetComponent<DialogueTrigger>();
         theTrigger.TriggerDialogue();
 
-        
+        slider.maxValue = 44;
+        slider.value = 22;
     }
 
     void Update()
@@ -31,7 +33,15 @@ public class BossManager : MonoBehaviour
             started = true; 
         }
 
-        
+        if (score >= 22 && !levelCompleted)
+        {
+            levelCompleted = true;
+            if (levelCompleted)
+            {
+                theBS.gameObject.SetActive(false);
+                FinishLevel();
+            }
+        }
 
     }
 
@@ -47,10 +57,21 @@ public class BossManager : MonoBehaviour
         }
     }
 
-    public void UpdateSlider()
+    public void UpdateSlider(bool isEnemy)
     {
-        Debug.Log("called slider update" + score);
-        slider.maxValue = 44;
-        slider.value = 44 - score;
+        Debug.Log("player: " + score + " enemy: " + enemyScore);
+        if (isEnemy) { 
+            slider.value += 1;
+
+        }else
+        {
+            slider.value -= 1;
+        }
+            
+    }
+
+    public void FinishLevel()
+    {
+        Debug.Log("Level completed. you took down mysterious strange");
     }
 }

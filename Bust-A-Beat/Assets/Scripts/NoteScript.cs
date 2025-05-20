@@ -15,15 +15,17 @@ public class NoteScript : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(keyToPress)){
-            if (canBePressed)
+            if (Input.GetKeyDown(keyToPress))
             {
-                gameObject.SetActive(false);
-                playerScore += 1;
-                
-                bossManager.score += 1;
-                bossManager.UpdateSlider();
-                
+                if (canBePressed)
+                {
+                    canBePressed = false; // Prevent trigger exit from firing after this
+                    gameObject.SetActive(false);
 
+                    playerScore += 1;
+                    bossManager.score += 1;
+                    bossManager.UpdateSlider(false);
+                }
             }
         }
     }
@@ -38,9 +40,11 @@ public class NoteScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.name.Contains("arrow"))
+        if (collision.name.Contains("arrow") && gameObject.activeSelf)
         {
             canBePressed = false;
+            bossManager.enemyScore += 1;
+            bossManager.UpdateSlider(true);
         }
     }
 }

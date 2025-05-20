@@ -2269,8 +2269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -277.98, y: 103.82}
-  m_SizeDelta: {x: 555.95, y: 97.091}
+  m_AnchoredPosition: {x: -1.4358, y: 103.82}
+  m_SizeDelta: {x: 1109, y: 97.091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &457227693
 MonoBehaviour:
@@ -2750,7 +2750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 19.1, y: 9.7}
+  m_AnchoredPosition: {x: 19.100037, y: 9.7}
   m_SizeDelta: {x: 91.4217, y: 167.3281}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &648507300
@@ -5177,6 +5177,7 @@ MonoBehaviour:
   startPlaying: 0
   theBS: {fileID: 938418536}
   dialogueManager: {fileID: 247880631}
+  enemyScore: 0
   score: 0
   slider: {fileID: 457227693}
 --- !u!114 &1320397799
@@ -5192,7 +5193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Granpa
+    name: ???
     portrait: {fileID: 4116872223839236384, guid: 9ada9c1a0ca66104f807de5dae535cd6, type: 3}
     sentences:
     - Ready to bust beats?
