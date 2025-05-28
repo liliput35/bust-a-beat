@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BossManager : MonoBehaviour
@@ -52,6 +53,7 @@ public class BossManager : MonoBehaviour
             if (levelCompleted)
             {
                 theBS.gameObject.SetActive(false);
+                dialogueManager.doneDialogue = false;
                 FinishLevel();
             }
         }
@@ -70,6 +72,16 @@ public class BossManager : MonoBehaviour
 
 
             enemyHitStreak = 0;
+        }
+
+        if(enemyScore >= 22)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if(levelCompleted && dialogueManager.doneDialogue)
+        {
+            toLevelTwo();
         }
     }
 
@@ -101,6 +113,12 @@ public class BossManager : MonoBehaviour
     public void FinishLevel()
     {
         levelCompleteDia.TriggerDialogue();
+
+    }
+
+    public void toLevelTwo()
+    {
+        SceneManager.LoadScene("Level2");
     }
 
     

@@ -16,4 +16,10 @@ public class SceneLoaderCut : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+
+    public void toScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
 }

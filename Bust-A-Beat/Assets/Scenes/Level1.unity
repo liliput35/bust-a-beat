@@ -901,10 +901,10 @@ MonoBehaviour:
     name: ???
     portrait: {fileID: 4116872223839236384, guid: 9ada9c1a0ca66104f807de5dae535cd6, type: 3}
     sentences:
-    - Ano favorite game ni erika?
-    - Ja-would you rather
-    - HAHAHAHHAH dw gago eh
-    - AAASDDDSADDAD
+    - Use A and D keys to move left and right
+    - Press the spacebar to jump on platforms
+    - Left click to attack enemies
+    - Complete the objectives
 --- !u!114 &201814204
 MonoBehaviour:
   m_ObjectHideFlags: 0
